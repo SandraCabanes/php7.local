@@ -7,11 +7,11 @@
 	  <title>PhotographItem-Responsive Theme | About us</title>
 
   	<!-- Bootstrap core css -->
-  	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
   	<!-- Bootstrap core css -->
-  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" type="text/css" href="../css/style.css">
   	<!-- Font Awesome icons -->
-  	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,7 +56,7 @@
          <div class="col-xs-12 intro">
             <div class="carousel-inner">
                <div class="item active">
-                <img class="img-responsive" src="images/about_us.jpg" alt="header picture">
+                <img class="img-responsive" src="../images/about_us.jpg" alt="header picture">
                </div>
                <div class="carousel-caption">
                   <h1>ABOUT US</h1>
@@ -167,22 +167,22 @@
            <h3>CLIENTS FEEDBACK</h3>
            <hr>
            <div class="col-xs-12 col-sm-3">
-             <img class="img-responsive" src="images/clients/client1.jpg" alt="client's picture">
+             <img class="img-responsive" src="../images/clients/client1.jpg" alt="client's picture">
              <h5>MISS BELLA</h5>
              <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</q>
            </div>
            <div class="col-xs-12 col-sm-3">
-             <img class="img-responsive" src="images/clients/client2.jpg" alt="client's picture">
+             <img class="img-responsive" src="../images/clients/client2.jpg" alt="client's picture">
              <h5>DON PENO</h5>
              <q>Tempora ea ratione vel nisi, qui perferendis nulla, fugit aut, beatae, tempore modi.</q>
            </div>
            <div class="col-xs-12 col-sm-3">
-             <img class="img-responsive" src="images/clients/client3.jpg" alt="client's picture">
+             <img class="img-responsive" src="../images/clients/client3.jpg" alt="client's picture">
              <h5>SWEETY</h5>
              <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</q>
            </div>
            <div class="col-xs-12 col-sm-3">
-             <img class="img-responsive" src="images/clients/client4.jpg" alt="client's picture">
+             <img class="img-responsive" src="../images/clients/client4.jpg" alt="client's picture">
              <h5>LADY</h5>
              <q>Tempora ea ratione vel nisi, qui perferendis nulla, fugit aut, beatae, tempore modi.</q>
            </div>
@@ -214,13 +214,13 @@
    </footer>
    
 <!-- Jquery -->
-   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
    <!-- Bootstrap core Javascript -->
-   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
    <!-- Plugins -->
-   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-   <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-   <script type="text/javascript" src="js/scrollreveal.min.js"></script>
-   <script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+   <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+   <script type="text/javascript" src="../js/scrollreveal.min.js"></script>
+   <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

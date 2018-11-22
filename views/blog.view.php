@@ -7,11 +7,11 @@
 	  <title>PhotographItem-Responsive Theme | Blog</title>
 
     <!-- Bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
     <!-- Bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- Font Awesome icons -->
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,7 +59,7 @@
              <div class="post">
                <div class="post-heading">
                  <span>6 JANUARY</span>
-                 <img class="img-responsive" src="images/blog/landscape.jpg" alt="post's picture">
+                 <img class="img-responsive" src="../images/blog/landscape.jpg" alt="post's picture">
                </div>
                <div class="post-body">
                  <h3><a href="single_post.html"><strong>doloremque illum</strong></a></h3>
@@ -80,7 +80,7 @@
              <div class="post">
                <div class="post-heading">
                  <span>7 FEBRUARY</span>
-                 <img class="img-responsive" src="images/blog/family.jpg" alt="post's picture">
+                 <img class="img-responsive" src="../images/blog/family.jpg" alt="post's picture">
                </div>
                <div class="post-body">
                  <h3><a href="single_post.html"><strong>Lorem ipsum</strong></a></h3>
@@ -101,7 +101,7 @@
              <div class="post">
                <div class="post-heading">
                  <span>8 MARCH</span>
-                 <img class="img-responsive" src="images/blog/elephant.jpg" alt="post's picture">
+                 <img class="img-responsive" src="../images/blog/elephant.jpg" alt="post's picture">
                </div>
                <div class="post-body">
                  <h3><a href="single_post.html"><strong>Aliquam soluta</strong></a></h3>
@@ -164,7 +164,7 @@
              <div class="post">
                <div class="post-heading">
                  <span>10 APRIL</span>
-                 <img class="img-responsive" src="images/blog/wedding.jpg" alt="post's picture">
+                 <img class="img-responsive" src="../images/blog/wedding.jpg" alt="post's picture">
                </div>
                <div class="post-body">
                  <span>
@@ -177,7 +177,7 @@
              <div class="post">
                <div class="post-heading">
                  <span>12 MAY</span>
-                 <img class="img-responsive" src="images/blog/woman.jpg" alt="post's picture">
+                 <img class="img-responsive" src="../images/blog/woman.jpg" alt="post's picture">
                </div>
                <div class="post-body">
                  <span>
@@ -215,13 +215,13 @@
    </footer>
 
 <!-- Jquery -->
-   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
    <!-- Bootstrap core Javascript -->
-   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
    <!-- Plugins -->
-   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-   <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-   <script type="text/javascript" src="js/scrollreveal.min.js"></script>
-   <script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+   <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+   <script type="text/javascript" src="../js/scrollreveal.min.js"></script>
+   <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>
