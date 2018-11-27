@@ -31,6 +31,7 @@
                         <i class="fa fa-phone-square sr-icons"></i> Contact</a>
                 </li>
             </ul>
+
         </div>
     </div>
 </nav>
