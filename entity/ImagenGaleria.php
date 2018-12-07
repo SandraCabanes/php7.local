@@ -32,15 +32,21 @@ class ImagenGaleria
     private $numDownloads;
 
     /**
+     * @var int
+     */
+    private $id;
+
+    /**
      * ImagenGaleria constructor.
-     * @param string $nombre
-     * @param string $descripcion
+     * @param $nombre
+     * @param $descripcion
      * @param int $numVisualizaciones
      * @param int $numLikes
      * @param int $numDownloads
      */
-    public function __construct($nombre, $descripcion, $numVisualizaciones=0, $numLikes=0, $numDownloads=0)
+    public function __construct($nombre="", $descripcion="", $numVisualizaciones=0, $numLikes=0, $numDownloads=0)
     {
+        $this->id=null;
         $this->nombre = $nombre;
         $this->descripcion = $descripcion;
         $this->numVisualizaciones = $numVisualizaciones;
@@ -159,4 +165,22 @@ class ImagenGaleria
     public function getUrlGallery() : string {
         return self::RUTA_IMAGENES_GALLERY.$this->getNombre();
     }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+
 }
