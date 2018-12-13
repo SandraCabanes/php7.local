@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a071c81f-758a-458e-8780-32f2fa0502ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/App.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/IEntity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exceptions/AppException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exceptions/PDOException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/ImagenGaleriaRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/Connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/QueryBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/ImagenGaleria.php" beforeDir="false" afterPath="$PROJECT_DIR$/entity/ImagenGaleria.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/galeria.php" beforeDir="false" afterPath="$PROJECT_DIR$/galeria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/galeria.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/galeria.view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,9 +57,10 @@
     <session id="1868037730">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -70,7 +69,7 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,7 +77,7 @@
           <entry key="gitattributes" value="1" />
           <entry key="html" value="2" />
           <entry key="imagenes" value="1" />
-          <entry key="php" value="84" />
+          <entry key="php" value="91" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
@@ -86,28 +85,28 @@
         <counts>
           <entry key="Database Element" value="1" />
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="84" />
+          <entry key="PHP" value="91" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="7452" />
+          <entry key="php" value="8184" />
           <entry key="sql" value="76" />
-          <entry key="txt" value="180" />
+          <entry key="txt" value="225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="7447" />
-          <entry key="PLAIN_TEXT" value="180" />
+          <entry key="PHP" value="8179" />
+          <entry key="PLAIN_TEXT" value="225" />
           <entry key="SQL" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="7" />
+          <entry key="PHP Class.type" value="9" />
           <entry key="PHP Interface.type" value="1" />
         </counts>
       </usages-collector>
@@ -118,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/galeria.view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+            <state relative-caret-position="315">
+              <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -127,17 +126,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/QueryBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="323">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/galeria.php">
+        <entry file="file://$PROJECT_DIR$/repository/ImagenGaleriaRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -151,47 +150,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/entity/ImagenGaleria.php">
+        <entry file="file://$PROJECT_DIR$/galeria.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="521">
+              <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="43" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/Connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="129" selection-start-line="13" selection-start-column="129" selection-end-line="13" selection-end-column="129" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/App.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exceptions/AppException.php">
+        <entry file="file://$PROJECT_DIR$/exceptions/PDOException.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entity/ImagenGaleria.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -225,15 +206,18 @@
         <option value="$PROJECT_DIR$/views/partials/nav.part.php" />
         <option value="$PROJECT_DIR$/Connection.php" />
         <option value="$PROJECT_DIR$/exceptions/QueryException.php" />
-        <option value="$PROJECT_DIR$/views/galeria.view.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/exceptions/AppException.php" />
         <option value="$PROJECT_DIR$/database/Connection.php" />
         <option value="$PROJECT_DIR$/core/App.php" />
-        <option value="$PROJECT_DIR$/galeria.php" />
         <option value="$PROJECT_DIR$/database/IEntity.php" />
-        <option value="$PROJECT_DIR$/database/QueryBuilder.php" />
+        <option value="$PROJECT_DIR$/exceptions/PDOException.php" />
+        <option value="$PROJECT_DIR$/Repository/ImagenGaleriaRepository.php" />
         <option value="$PROJECT_DIR$/entity/ImagenGaleria.php" />
+        <option value="$PROJECT_DIR$/views/galeria.view.php" />
+        <option value="$PROJECT_DIR$/repository/ImagenGaleriaRepository.php" />
+        <option value="$PROJECT_DIR$/database/QueryBuilder.php" />
+        <option value="$PROJECT_DIR$/galeria.php" />
       </list>
     </option>
   </component>
@@ -251,9 +235,9 @@
   <component name="PhpWebServerValidation" path_to_validation_script="C:\php\proyectos\php7.local" selected_validation_type="LOCAL" web_path_to_validation_script="http://php7.local/" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="820" />
-    <option name="width" value="1109" />
-    <option name="height" value="1039" />
+    <option name="x" value="631" />
+    <option name="width" value="1298" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -261,22 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="php7.local" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="php7.local" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,6 +282,22 @@
               <item name="php7.local" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="php7.local" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="php7.local" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -372,7 +356,8 @@
       <workItem from="1543907072664" duration="6627000" />
       <workItem from="1543913931334" duration="2032000" />
       <workItem from="1544171835286" duration="7395000" />
-      <workItem from="1544512172899" duration="8021000" />
+      <workItem from="1544512172899" duration="8089000" />
+      <workItem from="1544695719003" duration="5092000" />
     </task>
     <task id="LOCAL-00001" summary="Commit - Partils, Utils">
       <created>1543309078916</created>
@@ -430,17 +415,24 @@
       <option name="project" value="LOCAL" />
       <updated>1544512286293</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit - Conexion BDA y Obtención de datos v1">
+      <created>1544521118697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544521118697</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44441000" />
+    <option name="totallyTimeSpent" value="49601000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="656" y="0" width="887" height="831" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29262394" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32998565" />
@@ -477,7 +469,8 @@
     <MESSAGE value="Commit - Galeria" />
     <MESSAGE value="Commit - Subir imagenes a la base de datos" />
     <MESSAGE value="Commit - Add galeriaview.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit - Add galeriaview.php" />
+    <MESSAGE value="Commit - Conexion BDA y Obtención de datos v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit - Conexion BDA y Obtención de datos v1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitattributes" />
@@ -596,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/galeria.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exceptions/QueryException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -627,14 +613,7 @@
     <entry file="file://$PROJECT_DIR$/app/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exceptions/AppException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -652,10 +631,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/galeria.php">
+    <entry file="file://$PROJECT_DIR$/exceptions/AppException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        <state relative-caret-position="51">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -666,17 +645,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/QueryBuilder.php">
+    <entry file="file://$PROJECT_DIR$/exceptions/PDOException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="51">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/entity/ImagenGaleria.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="34">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/galeria.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/ImagenGaleriaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/galeria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="43" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -8,7 +8,7 @@
 require_once __DIR__ . '/../exceptions/QueryException.php';
 require_once __DIR__ . '/../core/App.php';
 
-class QueryBuilder
+abstract class QueryBuilder
 {
     private $connection;
     private $table;
@@ -27,9 +27,7 @@ class QueryBuilder
     }
 
     /**
-     * @param string $table
-     * @param string $classEntity
-     * @return mixed
+     * @return array
      * @throws QueryException
      */
     public function findAll():array{
@@ -42,14 +40,25 @@ class QueryBuilder
         return $pdostatement->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, $this->classEntity);
     }
 
+    /**
+     * @param IEntity $entity
+     * @throws QueryException
+     */
     public function save(IEntity $entity)
     {
-        $parameters=$entity->toArray();
-        $sql=sprintf(
-            'insert into %s (%s) values (%s)',
-            $this->table,
-            implode(', ', array_keys($parameters)),
-            ':' . implode(', :', array_keys($parameters))
-        );}
-
+        try{
+            $parameters=$entity->toArray();
+            $sql=sprintf(
+                'insert into %s (%s) values (%s)',
+                $this->table,
+                implode(', ', array_keys($parameters)),
+                ':' . implode(', :', array_keys($parameters))
+            // implode devuelve un string de un array ejemplo: Implode(',', array)
+            );
+            $pdoStatement=$this->connection->prepare($sql);
+            $pdoStatement->execute($parameters);
+        }catch (PDOException $exception){
+            throw new QueryException("Error al insertar en la BDA");
+        }
+    }
 }
