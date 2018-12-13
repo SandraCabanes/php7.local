@@ -6,10 +6,19 @@ function esOpcionMenuActiva($opcion)
         return true;
     }
 
-    if ($_SERVER['REQUEST_URI'] === "/" . $opcion . ".php") { //comprueba si la ruta activa es la que le pasamos ?
-        return true;
-    } else {
-        return false;
+    if($opcion==='index'){
+        if ($_SERVER['REQUEST_URI'] === "/" . $opcion . ".php") { //comprueba si la ruta activa es la que le pasamos ?
+            return true;
+        } else {
+            return false;
+        }
+    }else {
+
+        if ($_SERVER['REQUEST_URI'] === "/controllers/" . $opcion . ".php") { //comprueba si la ruta activa es la que le pasamos ?
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 

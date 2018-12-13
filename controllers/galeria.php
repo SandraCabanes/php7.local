@@ -1,13 +1,13 @@
 <?php
-require_once 'utils/utils.php'; //validar la opción de menú activa
-require_once 'exceptions/FileException.php';
-require_once 'exceptions/QueryException.php';
-require_once 'utils/File.php';
-require_once 'repository/ImagenGaleriaRepository.php';
-require_once 'entity/ImagenGaleria.php';
-require_once 'database/Connection.php';
-require_once 'database/QueryBuilder.php';
-require_once 'core/App.php';
+require_once __DIR__ . '/../utils/utils.php'; //validar la opción de menú activa
+require_once __DIR__ . '/../exceptions/FileException.php';
+require_once __DIR__ . '/../exceptions/QueryException.php';
+require_once __DIR__ . '/../utils/File.php';
+require_once __DIR__ . '/../repository/ImagenGaleriaRepository.php';
+require_once __DIR__ . '/../entity/ImagenGaleria.php';
+require_once __DIR__ . '/../database/Connection.php';
+require_once __DIR__ . '/../database/QueryBuilder.php';
+require_once __DIR__ . '/../core/App.php';
 
 
 $errores = [];
@@ -15,7 +15,7 @@ $descripcion = '';
 $mensaje = '';
 
 try {
-    $config = require_once 'app/config.php';
+    $config = require_once '../app/config.php';
     App::bind('config', $config); //Añadir en el array container de App.php el elemento config
 
     $imagenGaleriaRepository = new ImagenGaleriaRepository();
@@ -43,4 +43,4 @@ try {
     throw new FileException("Error en el fichero");
 }
 
-require 'views/galeria.view.php';
+require '../views/galeria.view.php';

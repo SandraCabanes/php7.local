@@ -5,7 +5,7 @@
  * Date: 11/12/2018
  * Time: 9:24
  */
-require_once 'exceptions/AppException.php'; //no necesita el ../ porque App.php se llama desde galeria.php, y actua como si estuviese allí, por lo que la ruta
+require_once '../exceptions/AppException.php'; //no necesita el ../ porque App.php se llama desde galeria.php, y actua como si estuviese allí, por lo que la ruta
 //debe ser como si estuviera en galeria.php
 
 class App

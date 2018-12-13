@@ -9,8 +9,8 @@ require_once __DIR__ . '/../database/IEntity.php';
 
 class ImagenGaleria implements IEntity
 {
-    const RUTA_IMAGENES_PORTFOLIO='images/index/portfolio/';
-    const RUTA_IMAGENES_GALLERY='images/index/gallery/';
+    const RUTA_IMAGENES_PORTFOLIO='../images/index/portfolio/';
+    const RUTA_IMAGENES_GALLERY='../images/index/gallery/';
     /**
      * @var string
      */

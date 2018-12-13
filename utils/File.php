@@ -56,7 +56,6 @@ class File
      * @param $rutaDestino
      * @throws FileException
      */
-
     public function saveUploadFile($rutaDestino){
         if(is_uploaded_file($this->file['tmp_name'])===false){
             throw new FileException("El archivo no se ha subido mediante un formulario");
@@ -75,6 +74,11 @@ class File
         }
     }
 
+    /**
+     * @param string $rutaOrigen
+     * @param string $rutaDestino
+     * @throws FileException
+     */
     public function copyFile(string $rutaOrigen, string $rutaDestino){
         $origen=$rutaOrigen.$this->fileName;
         $destino=$rutaDestino.$this->fileName;
