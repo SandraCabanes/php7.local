@@ -27,7 +27,7 @@
                 </div>
             <?php endif;?>
 
-            <form class="form-horizontal" action="<?= $_SERVER['PHP_SELF']?>" method="post"> <!--Se le está diciendo que este formulario se va a procesar por php-->
+            <form class="form-horizontal" action="<?= $_SERVER['PHP_SELF']?>" method="post" enctype="multipart/form-data"> <!--Se le está diciendo que este formulario se va a procesar por php-->
 	       	  <div class="form-group">
 	       	  	<div class="col-xs-6">
 	       	  	    <label class="label-control">First Name</label>
@@ -50,14 +50,53 @@
 	       	  		<input class="form-control" type="text" name="asunto">
 	       	  	</div>
 	       	  </div>
-	       	  <div class="form-group">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <label class="label-control">Imagen</label>
+                        <input class="form-control-file" type="file" name="imagen">
+                    </div>
+                </div>
+                <button class="pull-right btn btn-lg sr-button">SEND</button>
+	       	 <!-- <div class="form-group">
 	       	  	<div class="col-xs-12">
 	       	  		<label class="label-control">Message</label>
 	       	  		<textarea class="form-control" name="texto"></textarea>
-	       	  		<button class="pull-right btn btn-lg sr-button">SEND</button>
+
 	       	  	</div>
-	       	  </div>
+	       	  </div>-->
 	       </form>
+
+
+            <table class="table table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Asunto</th>
+                    <th scope="col">Imagen</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($contactos ?? [] as $c) : ?>
+                    <tr>
+                        <th scope="row"><?= $c->getIdContacto() ?></th>
+                        <td><?= $c->getNombre() ?></td>
+                        <td><?= $c->getApellidos()?></td>
+                        <td><?= $c->getEmail()?></td>
+                        <td><?= $c->getAsunto()?></td>
+                        <td>
+                            <img src="<?=$c->getUrlImagen() ?>"
+                                 alt="<?= $c->getUrlImagen() ?>"
+                                 title="<?= $c->getUrlImagen() ?>"
+                                 width="100px"/>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+
 	       <hr class="divider">
 	       <div class="address">
 	           <h3>GET IN TOUCH</h3>
